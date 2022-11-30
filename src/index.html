@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <h1> ANESCO GAMES</h1>
+
+    </header>
+
+
+    <section class="section-accueil">
+
+        <div class="container">
+
+            <div class="accueil">
+
+                <h1> JEU DU PENDU</h1>
+
+
+                <h2> Connaissez vous les règles du pendu?</h2>
+
+                <p class="regles"> Dans un premier temps il faut désigner un joueur qui devra deviner le mot. Pour
+                    expliquer plus
+                    facilement nous allons partir sur un exemple. Il y a deux joueurs, Rémi et Margaux. <br>
+
+                    Rémi pense à un mot et Margaux devra le deviner. Pour ce faire, Rémi dessine la potence et place en
+                    dessous autant de tirets qu’il y a de lettres dans le mot.<br>
+
+                    Margaux annonce une lettre. La lettre fait-elle partie du mot à deviner ? <br>
+
+                    Si oui, Rémi inscrit la lettre à sa place, sur le tiret correspondant, et autant de fois que la
+                    lettre
+                    apparait dans le mot.
+                    Si non, Rémi dessine le premier trait du pendu.
+                    Le jeu continue jusqu’au moment où l’un des joueurs remporte la partie. C’est-à-dire :
+                    <br>
+
+                    Margaux remporte la partie en découvrant toutes les lettres du mot.
+                    <br>
+                    Rémi gagne la partie en dessinant tous les trais du pendu. <br>
+
+                    A savoir : <br><br>
+
+                    Le nombre de coups dans une partie dépend du nombre de traits qu’il faut pour réaliser le dessin du
+                    pendu. Il est donc possible d’augmenter le nombre de chance en dessinant également la potence, et
+                    pas
+                    seulement le pendu, durant la partie. Cela facilite le jeu et permet au joueur qui cherche d’avoir
+                    plus
+                    de chances de trouver le mot.
+                </p>
+
+                <button id="compris"> J'ai compris! </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <section class="section-jeu">
+
+        <div class="container">
+
+
+            <div id="tentatives">coucou</div>
+
+
+
+            <br>
+            <div class="ecranP">
+                <div class="partie1">
+
+                    <img id="imgStep" src="assets/img/img0.png">
+
+
+
+
+
+
+                </div>
+                <div class="partie2">
+
+
+                    <ul id="mot">
+
+
+                    </ul>
+
+                    <div class="cadre">
+                        <ul id="progression"> 
+                            <li>Lettre trouvée</li>
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <hr>
+
+
+            <div class="partie3">
+
+
+
+
+
+                <div id="barreMot">
+
+                    <input type="text" id="barreSoluce">
+
+                    <button id="checkMot">Valider</button>
+                </div>
+
+                <div class="clavier">
+                    <button id="bA" class="touches">A</button>
+                    <button id="bB" class="touches">B</button>
+                    <button id="bC" class="touches">C</button>
+                    <button id="bD" class="touches">D</button>
+                    <button id="bE" class="touches">E</button>
+                    <button id="bF" class="touches">F</button>
+                    <button id="bG" class="touches">G</button>
+                    <button id="bH" class="touches">H</button>
+                    <button id="bI" class="touches">I</button>
+                    <button id="bJ" class="touches">J</button>
+                    <button id="bK" class="touches">K</button>
+                    <button id="bL" class="touches">L</button>
+                    <button id="bM" class="touches">M</button>
+                    <button id="bN" class="touches">N</button><br>
+                    <button id="bO" class="touches">O</button>
+                    <button id="bP" class="touches">P</button>
+                    <button id="bQ" class="touches">Q</button>
+                    <button id="bR" class="touches">R</button>
+                    <button id="bS" class="touches">S</button>
+                    <button id="bT" class="touches">T</button>
+                    <button id="bU" class="touches">U</button>
+                    <button id="bV" class="touches">V</button>
+                    <button id="bW" class="touches">W</button>
+                    <button id="bX" class="touches">X</button>
+                    <button id="bY" class="touches">Y</button>
+                    <button id="bZ" class="touches">Z</button>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="container"> &copy; anesco.fr 2022 </div>
+
+    </footer>
+
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

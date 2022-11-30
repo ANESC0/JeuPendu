@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+* {
+  box-sizing: content-box;
+}
+body {
+  margin: 0;
+  background-color: #dbe2ef;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+html {
+  height: 100%;
+}
+
+header {
+  background-color: #f9f7f7;
+  top: 0;
+  text-align: center;
+  padding: 10px;
+  color:#112D4E;
+}
+
+footer {
+  background-color: #112d4e;
+  color: #f9f7f7;
+  padding: 50px;
+  height: 50px;
+}
+
+section {
+}
+
+.regles {
+  text-align: justify;
+}
+
+.section-accueil {
+  padding: 30px;
+  color:#3f72af;
+}
+
+.accueil {
+  height: 80vh;
+  text-align: center;
+}
+
+.section-jeu {
+  background-color: #3f72af;
+
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.clavier {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#compris {
+  padding: 10px;
+  background-color: #3f72af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+
+
+.partie1{
+  vertical-align: middle;
+  margin-bottom: 50px;
+}
+
+.partie2{
+  
+  width: 400px;
+  height: 300px;
+  flex-grow: 1;
+
+}
+
+.ecranP{
+  display: flex;
+  flex-direction: row;
+    align-items: stretch;
+  
+}
+
+#mot {
+  text-align: center;
+
+  color:white;
+  font-size: 40px;
+}
+
+
+#progression{
+  text-align: justify;
+  list-style-type: none;
+  font-size: 24px;
+  color:white;
+}
+
+.letter {
+  display: inline;
+  border-bottom: 2px solid #eb6440;
+  margin: 5px;
+}
+
+#imgStep {
+  margin-top: 50px;
+  width:240px;
+  height: 320px;
+}
+
+.touches{
+  margin: 5px;
+  padding: 5px;
+  font-size: 32px;
+  border: none;
+  border-radius: 5px;
+  background-color: #112D4E;
+  color: white;
+}
+
+
+#barreSoluce{
+  padding: 10px;
+  border-radius: 15px;
+}
+#barreMot{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+#tentatives{
+  margin-top: 20px;
+  color:white;
+  font-size: 24px;
+}
+
+
+
+.cadre{
+  background-color: #dbe2ef;
+  margin-left: 50px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+
+
+@media all and (max-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+
+
+
+@media all and (max-width: 850px) {
+  .container {
+    width: 500px;
+  }
+}
+
+
+
+@media all and (max-width: 530px) {
+  .container {
+    width: 300px;
+  }
+}
