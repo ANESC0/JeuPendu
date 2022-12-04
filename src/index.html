@@ -26,39 +26,52 @@
                 <h1> JEU DU PENDU</h1>
 
 
-                <h2> Connaissez vous les règles du pendu?</h2>
+                <h2 id="titre2"> Connaissez vous les règles du pendu?</h2>
+                <div id="reglement">
 
-                <p class="regles"> Dans un premier temps il faut désigner un joueur qui devra deviner le mot. Pour
-                    expliquer plus
-                    facilement nous allons partir sur un exemple. Il y a deux joueurs, Rémi et Margaux. <br>
+                    <p id="regles1">
 
-                    Rémi pense à un mot et Margaux devra le deviner. Pour ce faire, Rémi dessine la potence et place en
-                    dessous autant de tirets qu’il y a de lettres dans le mot.<br>
-
-                    Margaux annonce une lettre. La lettre fait-elle partie du mot à deviner ? <br>
-
-                    Si oui, Rémi inscrit la lettre à sa place, sur le tiret correspondant, et autant de fois que la
-                    lettre
-                    apparait dans le mot.
-                    Si non, Rémi dessine le premier trait du pendu.
-                    Le jeu continue jusqu’au moment où l’un des joueurs remporte la partie. C’est-à-dire :
+                        Rémi (l'algorythme) pense à un mot et Margaux (vous) devra le deviner. Pour ce faire, Rémi
+                        dessine la potence et place en
+                        dessous autant de tirets qu’il y a de lettres dans le mot.
+                    </p>
                     <br>
 
-                    Margaux remporte la partie en découvrant toutes les lettres du mot.
-                    <br>
-                    Rémi gagne la partie en dessinant tous les trais du pendu. <br>
+                    <p id="regles2">
 
-                    A savoir : <br><br>
+                        Margaux annonce une lettre. La lettre fait-elle partie du mot à deviner ? <br>
 
-                    Le nombre de coups dans une partie dépend du nombre de traits qu’il faut pour réaliser le dessin du
-                    pendu. Il est donc possible d’augmenter le nombre de chance en dessinant également la potence, et
-                    pas
-                    seulement le pendu, durant la partie. Cela facilite le jeu et permet au joueur qui cherche d’avoir
-                    plus
-                    de chances de trouver le mot.
-                </p>
+                        <br>
 
-                <button id="compris"> J'ai compris! </button>
+                        Si oui, Rémi inscrit la lettre à sa place, sur le tiret correspondant, et autant de fois que la
+                        lettre
+                        apparait dans le mot.
+                        Si non, Rémi dessine le premier trait du pendu.
+                        Le jeu continue jusqu’au moment où l’un des joueurs remporte la partie. C’est-à-dire :
+
+
+                        Margaux remporte la partie en découvrant toutes les lettres du mot.
+                        <br>
+                        Margaux perd si Rémi gagne la partie en dessinant tous les trais du pendu.
+
+                    </p>
+
+                    <p id="regles3">A savoir : <br>
+
+                        Le nombre de coups dans une partie dépend du nombre de traits qu’il faut pour réaliser le dessin
+                        du
+                        pendu. Il est donc possible d’augmenter le nombre de chance en dessinant également la potence,
+                        et
+                        pas
+                        seulement le pendu, durant la partie. Cela facilite le jeu et permet au joueur qui cherche
+                        d’avoir
+                        plus
+                        de chances de trouver le mot.
+                    </p>
+
+                </div>
+
+               
 
 
             </div>
@@ -71,45 +84,45 @@
 
 
 
-    <section class="section-jeu">
+    <section class="section-jeu" id="jeu">
 
         <div class="container">
 
 
             <div id="tentatives">coucou</div>
 
+            <ul id="mot">
+
+
+            </ul>
+
+
 
 
             <br>
             <div class="ecranP">
-                <div class="partie1">
-
-                    <img id="imgStep" src="assets/img/img0.png">
 
 
+                <img id="imgStep" src="assets/img/img0.png">
 
 
 
 
-                </div>
-                <div class="partie2">
 
 
-                    <ul id="mot">
+
+
+
+
+                <div class="cadre">
+                    <ul id="progression">
+
 
 
                     </ul>
-
-                    <div class="cadre">
-                        <ul id="progression"> 
-                            <li>Lettre trouvée</li>
-
-
-                        </ul>
-                    </div>
-
-
                 </div>
+
+
             </div>
 
             <hr>
@@ -142,7 +155,7 @@
                     <button id="bK" class="touches">K</button>
                     <button id="bL" class="touches">L</button>
                     <button id="bM" class="touches">M</button>
-                    <button id="bN" class="touches">N</button><br>
+                    <button id="bN" class="touches">N</button>
                     <button id="bO" class="touches">O</button>
                     <button id="bP" class="touches">P</button>
                     <button id="bQ" class="touches">Q</button>
@@ -165,6 +178,48 @@
         </div>
 
     </section>
+
+
+    <!--Modale-->
+
+    <div id="demo" class="modali">
+        <div class="modali_contentop">
+
+            <div class="container-fluid px-4">
+
+                <div class="container">
+                    <!-- Content -->
+                    <div class="container">
+
+                        <h1 id="titreF"> test </h1>
+                        <p id="descF">vous avez perdu la partie de pendu ! mais vous pouvez retenter dans une autre partie </p>
+
+
+
+                        <button id="rejouer"> <i class="fa-solid fa-arrows-rotate"></i> Rejouer  </button>
+                        <a id="continuer" href="#jeu">Continuer</a>
+
+
+
+                        <br />
+                    </div>
+
+
+
+                    <br />
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
 
 
 
