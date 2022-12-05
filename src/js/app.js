@@ -1,6 +1,6 @@
-import { creerMot } from "/jeuPendu/src/js/modules/lettre.js";
-import { afficheLetter } from "/jeuPendu/src/js/modules/lettre.js";
-import { verifLettre } from "/jeuPendu/src/js/modules/lettre.js";
+
+
+import { verifLettre, afficheLetter, creerMot  } from "/games/js/modules/lettre.js";
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -13,7 +13,7 @@ const proposition = document.getElementById("checkMot");
 
 // données élémentaires
 
-var tentativesRes = 11;
+let tentativesRes = 11;
 
 let listeMots = [
   "alpha",
@@ -24,10 +24,10 @@ let listeMots = [
   "anticonstitutionnellement",
 ];
 
-var word = listeMots[getRandomInt(listeMots.length)];
+let word = listeMots[getRandomInt(listeMots.length)];
 
 
-var mot = creerMot(word);
+let mot = creerMot(word);
 
 // afficher le nombre de tentatives
 
@@ -195,17 +195,18 @@ proposition.addEventListener("click", () => {
 
 function ProposerLettre(mot, lettre) {
   try {
-    console.log("button pressé");
+   
 
     if (tentativesRes > 0) {
       if (tentativesRes > 0 && verifLettre(mot, lettre)) {
         afficheLetter(mot);
         let newInfo = document.createElement("li");
-        newInfo.textContent = `Nouvelle lettre ajoutée`;
+        newInfo.textContent = `Nouvelle lettre ajoutée "${lettre}"`;
         progression.appendChild(newInfo);
       } else {
         let newInfo = document.createElement("li");
-        newInfo.textContent = `Mauvaise lettre`;
+        newInfo.textContent = `lettre introuvable`;
+        newInfo.style.color="#FF6347"
         progression.appendChild(newInfo);
         decrementer();
         if (tentativesRes == 0) {
@@ -216,6 +217,7 @@ function ProposerLettre(mot, lettre) {
     } else {
       let newInfo = document.createElement("li");
       newInfo.textContent = `Vous n'avez plus de tentatives ☠️ `;
+      newInfo.style.color="black"
       progression.appendChild(newInfo);
       perdu();
       document.location = "#demo";
@@ -248,6 +250,9 @@ function proposerMot(moot) {
          
         }
       }
+    } else {
+      perdu()
+      document.location = "#demo";
     }
   } else {
     // proposition vide

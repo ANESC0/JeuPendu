@@ -9,9 +9,7 @@ export function verifLettre(word, letter) {
   let result = false;
 
   for (let i = 0; i < word.length; i++) {
-    console.log(letter)
-    console.log(word[i].letter)
-    console.log(word)
+    
     if (word[i].letter == letter) {
       result = true;
       word[i].hidden = false;
@@ -29,7 +27,7 @@ export function afficheLetter(word) {
     let mot = document.getElementById("mot");
     mot.innerHTML="";
     let li;
-    console.log("okay")
+   
 
     for (let i = 0; i < word.length; i++) {
 

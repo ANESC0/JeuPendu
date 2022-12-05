@@ -117,7 +117,7 @@ background-size : cover;
 
 #mot {
   text-align: center;
-
+  padding: 0;
   color:white;
   font-size: 40px;
 }
@@ -149,6 +149,14 @@ background-size : cover;
   border-radius: 5px;
   background-color: #112D4E;
   color: white;
+  cursor: pointer;
+}
+
+
+.touches:active{
+  background-color: white;
+  color: #112D4E;
+
 }
 
 
@@ -188,6 +196,12 @@ background-size : cover;
   border-radius: 10px;
   color:white;
   font-size: 24px;
+  cursor: pointer;
+}
+
+#checkMot:hover{
+  background-color: white;
+  color:#112D4E;
 }
 
 
