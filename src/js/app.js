@@ -25,8 +25,7 @@ let listeMots = [
 ];
 
 var word = listeMots[getRandomInt(listeMots.length)];
-console.log(word.length);
-console.log(word);
+
 
 var mot = creerMot(word);
 
@@ -192,7 +191,7 @@ proposition.addEventListener("click", () => {
   actualiseImg(tentativesRes);
 });
 
-console.log(mot);
+
 
 function ProposerLettre(mot, lettre) {
   try {
@@ -216,7 +215,7 @@ function ProposerLettre(mot, lettre) {
       }
     } else {
       let newInfo = document.createElement("li");
-      newInfo.textContent = `Vous n'avez plus de tentatives `;
+      newInfo.textContent = `Vous n'avez plus de tentatives ☠️ `;
       progression.appendChild(newInfo);
       perdu();
       document.location = "#demo";
@@ -246,7 +245,7 @@ function proposerMot(moot) {
           document.location = "#demo";
         } else {
           decrementer();
-          console.log("ce n'est pas le bon mot..");
+         
         }
       }
     }

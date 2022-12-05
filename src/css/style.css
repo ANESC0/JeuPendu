@@ -12,6 +12,10 @@ body {
   align-items: stretch;
 }
 
+p{
+  font-size: 20px;
+}
+
 html {
   height: 100%;
 }
@@ -380,7 +384,15 @@ background-size : cover;
 
 @media all and (max-width: 530px) {
   .container {
-    width: 300px;
+    width: 100%;
+  }
+
+  .ecranP{
+    padding: 20px;
+    display: flex;
+  flex-direction: row;
+    align-items: center;
+    margin-bottom: 0px;
   }
 
   .accueil {
@@ -452,3 +464,5 @@ background-size : cover;
 }
 
 }
+
+
