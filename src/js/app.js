@@ -1,6 +1,10 @@
+import {
+  verifLettre,
+  afficheLetter,
+  creerMot,
+} from "games/js/modules/lettre.js";
 
-
-import { verifLettre, afficheLetter, creerMot  } from "/games/js/modules/lettre.js";
+///
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -22,10 +26,32 @@ let listeMots = [
   "gamma",
   "epouvantail",
   "anticonstitutionnellement",
+  "bateau",
+  "chat",
+  "chien",
+  "roue",
+  "casquette",
+  "gant",
+  "soulier",
+  "basket",
+  "tableau",
+  "cachuete",
+  "chapeau",
+  "botte",
+  "scorpion",
+  "alchimie",
+  "dragon",
+  "fourmi",
+  "scarabe",
+  "baleine",
+  "arbre",
+  "buisson",
+  "cryptomonnaie",
+  "telephone",
+  "ordinateur",
 ];
 
 let word = listeMots[getRandomInt(listeMots.length)];
-
 
 let mot = creerMot(word);
 
@@ -191,12 +217,8 @@ proposition.addEventListener("click", () => {
   actualiseImg(tentativesRes);
 });
 
-
-
 function ProposerLettre(mot, lettre) {
   try {
-   
-
     if (tentativesRes > 0) {
       if (tentativesRes > 0 && verifLettre(mot, lettre)) {
         afficheLetter(mot);
@@ -206,7 +228,7 @@ function ProposerLettre(mot, lettre) {
       } else {
         let newInfo = document.createElement("li");
         newInfo.textContent = `lettre introuvable`;
-        newInfo.style.color="#FF6347"
+        newInfo.style.color = "#FF6347";
         progression.appendChild(newInfo);
         decrementer();
         if (tentativesRes == 0) {
@@ -217,7 +239,7 @@ function ProposerLettre(mot, lettre) {
     } else {
       let newInfo = document.createElement("li");
       newInfo.textContent = `Vous n'avez plus de tentatives ☠️ `;
-      newInfo.style.color="black"
+      newInfo.style.color = "black";
       progression.appendChild(newInfo);
       perdu();
       document.location = "#demo";
@@ -247,11 +269,10 @@ function proposerMot(moot) {
           document.location = "#demo";
         } else {
           decrementer();
-         
         }
       }
     } else {
-      perdu()
+      perdu();
       document.location = "#demo";
     }
   } else {
@@ -331,10 +352,13 @@ function reset() {
 
   // remettre l image a 0
 
-  actualiseImg(tentativesRes)
-
+  actualiseImg(tentativesRes);
 
   // on vide l input
 
   document.querySelector("#barreSoluce").value = "";
+
+  // on vide la div de progression
+
+  progression.innerHTML = "";
 }

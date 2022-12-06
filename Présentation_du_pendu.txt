@@ -1,0 +1,41 @@
+Présentation rapide du jeu du Pendu
+
+
+
+Ce projet reprend un jeu incontournable, celui du pendu. En quoi consiste ce jeu?
+
+
+
+Pour ceux qui ne savent pas c'est très simple, Le but est de deviner le mot qui se cache derrière les points d'interrogation.
+
+Le joueur a en effet 2 moyens de deviner le mot secret, il saisit les lettres sur le clavier du navigateur dans le but de les découvrir dans cette zone de point d'interrogation
+
+
+
+ -Si son choix est bon : le navigateur lui révèle l'emplacement de(s) (la) lettre dans le mot mystère ce qui lui permet de se rapprocher du mot
+
+
+
+
+-Si son choix est mauvais : le navigateur lui ôte un point à ses tentatives , si ses tentatives sont épuisées le joueur a perdu .
+
+ Pour gagner , le joueur doit écrire le mot exact au caractère près où il perdra une fois de plus une tentative.
+Le joueur peut proposer un mot ou une lettre à tout moment de la partie tant qu'il lui reste des tentatives. et peut relancer une partie qu'il gagne ou perd.
+
+
+
+
+
+
+
+
+
+Niveau conception : 
+
+
+
+j'ai décidé de réaliser ce projet dans un univers assez scolaire ,maternel pour évoquer un peu de nostalgie à l'utilisateur.
+
+
+
+J'ai décidé de faire apparaître les règles avant le jeu pour que l'utilisateur prenne le temps de lire les règles avant usage.
